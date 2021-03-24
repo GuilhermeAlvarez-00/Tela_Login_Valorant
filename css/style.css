@@ -161,8 +161,10 @@ div.login{
 
 .container-login a{
     font-weight: bold;
-    font-size: 15px;
+    font-size: 13px;
     color: rgb(145, 145, 145);
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 768px){
