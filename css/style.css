@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section.banner{
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../imagens/banner_valorant.png');
+    background-position: center;
+    background-size: cover;
+}
+
+div.login{
+    width: 30%;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.container-login{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-img .logo-valorant-mobile{
+    display: none;
+}
+
+.container-login .logo-valorant, h1{
+    margin-top: 40px;
+}
+
+.container-login h1{
+    font-size: 30px;
+}
+
+.container-login form{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-login input[type=text], [type=password]{
+    width: 100%;
+    height: 45px;
+    margin-top: 20px;
+    background-color: rgb(241, 241, 241);
+    border: 0;
+    border-radius: 3px;
+    padding-left: 20px;
+}
+
+.container-login input[type=text]::-webkit-input-placeholder, [type=password]::-webkit-input-placeholder{
+    font-weight: bold;
+    font-size: 13px;
+    color: rgb(145, 145, 145);
+}
+
+.container-login .links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-login .links .div{
+    width: 31%;
+    height: 35px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.container-login .img{
+    width: 40%;
+}
+
+.container-login .face{
+    background-color: #166FE5;
+}
+
+.container-login .google{
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.container-login .apple{
+    background-color: black;
+}
+
+.container-checkbox{
+    margin-top: 10px;
+}
+
+.chk{
+    position: relative;
+}
+
+.chk input {
+    display: none;
+}
+
+.chk span {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.chk input:checked + span {
+    background-color: #FF4655;
+    border: 0;
+}
+
+.container-login .chk label{
+    color: rgb(145, 145, 145);
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.container-login button{
+    margin-top: 80px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 20px;
+    background-color: transparent;
+    border:1px solid #ccc;
+    color: #ccc;
+    transition: all 200ms ease-in-out;
+}
+
+.container-login button:hover{
+    background-color: #FF4655;
+    color: white;
+    border-color: #FF4655;
+}
+
+.container-login a:nth-of-type(1){
+    margin-top: 40px;
+}
+
+.container-login a{
+    font-weight: bold;
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+}
+
+@media screen and (max-width: 768px){
+    div.login{
+        width: 100%;
+        background-color: transparent;
+    }
+
+    .container-login{
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+        color: white;
+    }
+
+    section.banner{
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../imagens/banner_valorant.png');
+    }
+
+    .container-login .logo-valorant, h1{
+        margin-top: 0;
+    }
+
+    .container-img .logo-valorant{
+        display: none;
+    }
+
+    .container-img .logo-valorant-mobile{
+        display: block;
+    }
+
+    .container-login button{
+        border:2px solid #FF4655;
+        color: #FF4655;
+    }
+}
