@@ -5,6 +5,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 section.banner{
     z-index: 1;
     width: 100%;
